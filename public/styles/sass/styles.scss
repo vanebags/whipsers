@@ -1,0 +1,39 @@
+@import 'partials/fonts';
+@import 'partials/global';
+@import 'partials/colors';
+
+
+.wrapper { width: 95%; margin: 0 auto;  }
+body { background: $mainColor;  background: url('../../img/bg.jpg'); background-repeat: no-repeat; background-size: 100%; }
+#header {
+	margin: 15px 0 0 0;
+	h1#logo { float: left; font-family: 'Amatic SC', cursive; margin: 5px 0 0 0; font-size: 23pt; width: 14%; }
+
+	#nav {
+		float: right; 
+		width: 45%;
+		margin: 10px 0 0 0;
+
+		li {
+			float: left;
+			margin: 0 3.5% 0 0;
+			&:last-child{
+				margin-right: 0;
+			};
+			a {
+			  color: darken($linkColor, 27%);
+			  display: block;
+			  background-color: $linkColor;
+			  padding: 4px 7px;
+			  border-radius: 3px;
+			  font-size: 14pt;
+			  transition: background-color 100ms linear;
+			  &:hover, &.active {
+				color: darken($linkColor, 27%);
+				background-color: lighten($linkColor, 15%);
+
+			  }
+			}
+		}
+	}
+}
