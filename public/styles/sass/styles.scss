@@ -10,13 +10,14 @@ body { background: $mainColor;  background: url('../../img/bg.jpg'); background-
 	h1#logo { float: left; font-family: 'Amatic SC', cursive; margin: 5px 0 0 0; font-size: 23pt; width: 14%; }
 
 	#nav {
-		float: right; 
-		width: 45%;
-		margin: 10px 0 0 0;
+		  float: right;
+		  width: 60%;
+		  margin: 10px 0 0 0;
+		  max-width: 550px;
 
 		li {
 			float: left;
-			margin: 0 3.5% 0 0;
+			margin: 0 1.5% 0 0;
 			&:last-child{
 				margin-right: 0;
 			};
