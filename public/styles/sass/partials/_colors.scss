@@ -1,3 +1,5 @@
 $mainColor: #000;
-$linkColor: rgb(133, 77, 176);
+/*$linkColor: rgb(133, 77, 176);*/
+$linkColor: #376967;
+$secondaryColor: darken($linkColor, 10%);
 
