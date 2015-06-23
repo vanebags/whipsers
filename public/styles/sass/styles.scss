@@ -126,7 +126,8 @@ ul.sub-nav {
 				color: #3373cc;
   				font-size: 20pt;
   				transition: background-color 500ms linear;
-  				&: {
+  				
+  				&:hover {
   					color: #d9e9ff;
   				}
 			}

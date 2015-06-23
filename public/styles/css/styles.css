@@ -81,7 +81,6 @@ p {
   padding: 10px 20px;
   margin: 25px auto; }
 
-/*$linkColor: rgb(133, 77, 176);*/
 .wrapper {
   width: 95%;
   margin: 0 auto;
@@ -207,5 +206,5 @@ ul.sub-nav {
         color: #3373cc;
         font-size: 20pt;
         transition: background-color 500ms linear; }
-      #footer #social li i:hover {
-        color: #d9e9ff; }
+        #footer #social li i:hover {
+          color: #d9e9ff; }
