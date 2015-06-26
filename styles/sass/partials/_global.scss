@@ -68,8 +68,8 @@ a { color: #efefef; text-decoration: none;  }
 p { -webkit-font-smoothing: antialiased;  }
 
 .pane {
-	background: rgba(0, 128, 128, 0.8);
-	color: #ccc;
+	background: $paneColor;
+	color: #172d2c;
 	line-height: 1.4;
     box-sizing: border-box;
     padding: 10px 20px;

@@ -1,4 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Amatic+SC:400,700);
+@import url(http://fonts.googleapis.com/css?family=Lobster);
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -29,9 +30,7 @@ footer, header, hgroup, menu, nav, section {
   display: block; }
 
 body {
-  line-height: 1;
-  background-color: #C4E8E7;
-  background-size: 100%; } 
+  line-height: 1; }
 
 ol, ul {
   list-style: none; }
@@ -57,7 +56,7 @@ h1, h2, h3 {
   color: #efefef; }
 
 a {
-  color: #68aea4;
+  color: #efefef;
   text-decoration: none; }
 
 .clearfix:before,
@@ -76,7 +75,7 @@ p {
   -webkit-font-smoothing: antialiased; }
 
 .pane {
-  background: rgba(158,218,216,0.8) ;
+  background: rgba(158, 218, 216, 0.8);
   color: #172d2c;
   line-height: 1.4;
   box-sizing: border-box;
@@ -92,8 +91,12 @@ p {
   margin-bottom: 50px;
   margin-top: 95px; }
 
+body {
+  background: #C4E8E7;
+  background-size: 100%; }
+
 #header {
-  background: rgba(103, 197, 194, 0.8) ;
+  background: rgba(103, 197, 194, 0.8);
   padding: 10px 0 17px;
   margin: 0;
   border-bottom: 2px solid #eff9f8;
@@ -103,45 +106,44 @@ p {
   z-index: 99999; }
   #header .wrapper {
     max-width: 1300px; }
-  #header h1#logo:before{
-    position:left;
-    content: url("../../img/logo1.png");
-    margin: 20px 0 0 0;}
-   
-  #header h1#logo {
+
+h1#logo {
+  float: left;
+  font-family: 'Lobster', 'cursive';
+  margin: 5px 0 0 70px;
+  font-size: 32pt;
+  width: 35%;
+  text-shadow: 1px 1px 0px #Ec1515; }
+
+#nav {
+  float: right;
+  width: 60%;
+  margin: 10px 0 0 0;
+  max-width: 550px; }
+  #nav li {
     float: left;
-    font-family: 'Lobster', cursive;
-    margin: 0 0 0 10px;
-    font-size: 32pt;
-    width: 50%;
-    height: 90px;
-    text-shadow: 1px 1px 0px #Ec1515; }
-  #header #nav {
-    float: right;
-    width: 60%;
-    margin: 70px 0 0 0;
-    max-width: 550px; }
-    #header #nav li {
-      float: left;
-      margin: 0 1.5% 0 0; }
-      #header #nav li:last-child {
-        margin-right: 0; }
-      #header #nav li a {
+    margin: 0 1.5% 0 0; }
+    #nav li:last-child {
+      margin-right: 0; }
+    #nav li a {
+      color: #7d3032;
+      display: block;
+      background-color: #FBF9D7;
+      padding: 4px 7px;
+      border-radius: 3px;
+      font-size: 14pt;
+      transition: background-color 100ms linear; }
+      #nav li a:hover {
         color: #7d3032;
-        display: block;
-        background-color: #FBF9D7;
-        padding: 4px 7px;
-        border-radius: 3px;
-        font-size: 14pt;
-        transition: background-color 100ms linear; }
-        #header #nav li a:hover, #header #nav li a.active {
-          color: #7d3032;
-          background-color: #FDFDF3; }
+        background-color: #FDFDF3; }
+    #nav li.current-menu-item a {
+      color: #7d3032;
+      background-color: #FDFDF3; }
 
 #hero-wrapper {
   margin: 0 0 70px;
   width: 94%;
-  margin: 170px auto 10px;
+  margin: 50px auto 10px;
   overflow: hidden; }
   #hero-wrapper .inner {
     background: #333;
@@ -149,31 +151,29 @@ p {
     height: 275px;
     overflow: hidden;
     margin-bottom: 10px; }
-
-#hero li {
-  height: 280px;
-  float: left;
-  margin: 0 100px 0 0;
-  display: none; }
-  #hero li.active {
-    display: block; }
-
-ul.sub-nav {
-  margin: 0;
-  float: right; }
-  ul.sub-nav li {
+  #hero-wrapper #hero li {
+    height: 280px;
     float: left;
-    margin: 0 7px 0 0; }
-    ul.sub-nav li:last-child {
-      margin-right: 0; }
-    ul.sub-nav li a {
-      display: block;
-      width: 15px;
-      height: 15px;
-      background: #eff9f8;
-      border: 1px solid #519b98; }
-    ul.sub-nav li.active a {
-      background-color: #376967; }
+    margin: 0 100px 0 0;
+    display: none; }
+    #hero-wrapper #hero li.active {
+      display: block; }
+  #hero-wrapper ul.sub-nav {
+    margin: 0;
+    float: right; }
+    #hero-wrapper ul.sub-nav li {
+      float: left;
+      margin: 0 7px 0 0; }
+      #hero-wrapper ul.sub-nav li:last-child {
+        margin-right: 0; }
+      #hero-wrapper ul.sub-nav li a {
+        display: block;
+        width: 15px;
+        height: 15px;
+        background: #eff9f8;
+        border: 1px solid #519b98; }
+      #hero-wrapper ul.sub-nav li.active a {
+        background-color: #376967; }
 
 #home-ctas .pane:first-child {
   width: 75%;
@@ -188,11 +188,10 @@ ul.sub-nav {
   color: #fff;
   float: right; }
   #home-ctas #fromTheBlog li.headline {
-    font-size: 24pt;
+    font-size: 20pt;
     font-weight: bold;
-    font-family: 'Lobster', cursive;
+    font-family: 'Amatic SC', cursive;
     text-align: center;
-    text-shadow: 1px 1px 0px #Ec1515;
     margin-bottom: 10px; }
 
 #footer {
