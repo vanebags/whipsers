@@ -6,19 +6,19 @@
 
 .wrapper { width: 95%; margin: 0 auto;  max-width: 960px; }
 #main.wrapper { margin-bottom:  50px; margin-top: 95px; }
-body { background: $mainColor;  background: url('../../img/bg.jpg'); background-repeat: no-repeat; background-size: 100%; }
+body { background: $mainColor;  background-size: 100%; }
 #header {
-	background: rgba(37, 72, 70, 0.8);
+	background: rgba(103, 197, 194, 0.8) ;
 	padding: 10px 0 17px;
 	.wrapper { max-width: 1300px; }
 	margin: 0;
-	border-bottom: 1px solid darken($secondaryColor, 15%);
+	border-bottom: 2px solid #eff9f8;
 	position: fixed;
 	width: 100%;
 	top: 0;
-	z-index: 99999;
+	z-index: 99999;}
 
-	h1#logo { float: left; font-family: 'Amatic SC', cursive; margin: 5px 0 0 0; font-size: 23pt; width: 14%; text-shadow: 1px 2px 0px #000; }
+	h1#logo { float: left; font-family: 'Lobster', cursive; margin: 5px 0 0 70px; font-size: 32pt; width: 35%; text-shadow: 1px 1px 0px #Ec1515; }
 
 	#nav {
 		float: right;
@@ -33,16 +33,16 @@ body { background: $mainColor;  background: url('../../img/bg.jpg'); background-
 				margin-right: 0;
 			}
 			a {
-			  color: darken($linkColor, 27%);
+			  color: color: #7d3032;;
 			  display: block;
-			  background-color: $linkColor;
+			  background-color: #FBF9D7;
 			  padding: 4px 7px;
 			  border-radius: 3px;
 			  font-size: 14pt;
 			  transition: background-color 100ms linear;
 			  &:hover, &.active {
-				color: darken($linkColor, 27%);
-				background-color: lighten($linkColor, 15%);
+				color: #7d3032;
+				background-color: #FDFDF3;
 			  }
 			}
 		}
@@ -56,12 +56,10 @@ body { background: $mainColor;  background: url('../../img/bg.jpg'); background-
 	overflow: hidden;
 	.inner {
 		background: #333;
-		border: 10px solid #fff;
+		border: 10px solid #eff9f8;
 		height: 275px;
 		overflow: hidden;
-		margin-bottom: 10px;
-	}
-}
+		margin-bottom: 10px;}
 
 #hero {
 	li {
@@ -87,11 +85,11 @@ ul.sub-nav {
 			display: block;
 			width: 15px;
   			height: 15px;
-			background: #fff;
-			border: 1px solid #000;
+			background: #eff9f8;
+			border: 1px solid #519b98;
 		}
 		&.active a {
-		  background-color: $linkColor;
+		  background-color: #376967;
 		}
 	}
 }
@@ -116,11 +114,11 @@ ul.sub-nav {
 }
 
 #footer {
-	background: $secondaryColor;
+	background: rgba(103, 197, 194, 0.8);
 	position: fixed;
 	bottom: 0;
 	width: 100%;
-	border-top: 1px solid darken($secondaryColor, 15%);
+	border-top: 1px solid #eff9f8;
 	
 	.wrapper {
 		max-width: 1250px;
