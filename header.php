@@ -11,7 +11,7 @@
 
 <div id="header" class="clearfix">
 	<div class="wrapper clearfix">
-		<h1 id="logo">Whispers of The Oracle</h1>
+		<a href="<?php bloginfo('url') ?>"><h1 id="logo">Whispers of The Oracle</h1></a>
 		<?php wp_nav_menu(array(
 			'menu' 		=> 'main',
 			'menu_id' 	=> 'nav'

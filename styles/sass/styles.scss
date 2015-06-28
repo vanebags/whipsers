@@ -149,3 +149,61 @@ h1#logo { float: left; font-family: 'Lobster', 'cursive'; margin: 5px 0 0 70px; 
 		}
 	}
 }	
+
+.reader {
+	width: 300px;
+	height: 290px;
+	float: left;
+  	margin: 0 10px 10px 0;
+  	position: relative;
+  	&:hover { cursor: pointer; }
+
+  	& > h2 { font-size: 22pt; text-align: center; color: $linkColor; }
+  	.info {
+  	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  background-color: #333;
+	  height: 250px;
+	  width: 100%;
+	  color: #eee;
+	  padding: 25px;
+	  box-sizing: border-box;
+	  z-index: 1;
+  	}
+	& > img { 
+		width: 100%; 
+		height: 250px; 
+		z-index: 2;
+  		position: relative;
+	}
+}
+
+.peopleNav {
+	width: 25%;
+	float: left;
+	li {
+		margin: 0 0 25px 0;
+		&.active a { border: 5px solid #333; }
+
+		a {
+			border: 5px solid $mainColor;
+			display: block;
+			img {
+				width: 100%;
+			}
+		}
+	}
+}
+
+.intro { margin-bottom: 25px; }
+
+.bios { 
+	float: right; 
+	width: 70%; 
+	.bio { 
+		display: none; 
+		width: 0;
+		overflow: hidden;
+	}
+}
