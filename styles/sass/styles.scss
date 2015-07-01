@@ -5,10 +5,11 @@
 
 .wrapper { width: 95%; margin: 0 auto;  max-width: 960px; }
 #main.wrapper { margin-bottom:  50px; margin-top: 95px; }
+#content { margin-top: 190px; }
 body { background: $mainColor;  background-size: 100%; }
 #header {
 	background: rgba(103, 197, 194, 0.8);
-	padding: 10px 0 17px;
+	padding: 15px 0 50px;
 	.wrapper { max-width: 1300px; }
 	margin: 0;
 	border-bottom: 2px solid #eff9f8;
@@ -16,14 +17,28 @@ body { background: $mainColor;  background-size: 100%; }
 	width: 100%;
 	top: 0;
 	z-index: 99999;
-}
+	
+	a#logo {
+		display: block;
+		height: 100px;
+		position: absolute;
+		width: 470px;
+		background: url("../../img/logo1.png") 0 0 no-repeat;
 
-h1#logo { float: left; font-family: 'Lobster Two', cursive; margin: 5px 0 0 70px; font-size: 28pt; width: 35%; text-shadow: 1px 1px 0px #Ec1515; }
+		h1 {
+			font-family: 'Lobster Two', cursive; 
+			margin: 30px 0 0 0; 
+			font-size: 28pt; 
+			text-shadow: 1px 1px 0px #Ec1515; 
+			text-align: right;
+		}
+	}
+}
 
 #nav {
 	float: right;
 	width: 60%;
-	margin: 100px 0 0 0;
+	margin: 38px 0 0 0;
 	max-width: 650px;
 
 	li {
@@ -50,9 +65,8 @@ h1#logo { float: left; font-family: 'Lobster Two', cursive; margin: 5px 0 0 70px
 }
 
 #hero-wrapper {
-	margin: 0 0 70px;
 	width: 94%;
-	margin: 50px auto 10px;
+	margin: 0 auto 10px;
 	overflow: hidden;
 	
 	.inner {
@@ -96,16 +110,11 @@ h1#logo { float: left; font-family: 'Lobster Two', cursive; margin: 5px 0 0 70px
 }
 
 #home-ctas {
-	.pane:first-child {
-	  	width: 75%;
-  		margin: 0px 2% 0 0;
-  		float: left;
+	.pane {
+	  	width: 95%;
+  		margin: 20px auto 0;
 	}
 
-	.pane:last-child {
-	  	margin: 0;
-	}
-	
 	#fromTheBlog {
 		li.headline { font-size: 20pt; font-weight: bold; font-family: 'Amatic SC', cursive; text-align: center; margin-bottom: 10px; }
 		width: 22%;
@@ -199,11 +208,14 @@ h1#logo { float: left; font-family: 'Lobster Two', cursive; margin: 5px 0 0 70px
 .intro { margin-bottom: 25px; }
 
 .bios { 
+	h2, p { color: #555; }
+	h2 { font-size: 22pt; }
 	float: right; 
 	width: 70%; 
 	.bio { 
 		display: none; 
 		width: 0;
 		overflow: hidden;
+		h2 { margin: 25px 0 15px; }
 	}
-}
+} 	
