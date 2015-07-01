@@ -18,13 +18,13 @@ body { background: $mainColor;  background-size: 100%; }
 	z-index: 99999;
 }
 
-h1#logo { float: left; font-family: 'Lobster', 'cursive'; margin: 5px 0 0 70px; font-size: 32pt; width: 35%; text-shadow: 1px 1px 0px #Ec1515; }
+h1#logo { float: left; font-family: 'Lobster Two', cursive; margin: 5px 0 0 70px; font-size: 28pt; width: 35%; text-shadow: 1px 1px 0px #Ec1515; }
 
 #nav {
 	float: right;
 	width: 60%;
-	margin: 10px 0 0 0;
-	max-width: 550px;
+	margin: 100px 0 0 0;
+	max-width: 650px;
 
 	li {
 		float: left;
