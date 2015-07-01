@@ -109,6 +109,11 @@ body {
   z-index: 99999; }
   #header .wrapper {
     max-width: 1300px; }
+  #header #phone {
+    position: absolute;
+    right: 6%;
+    top: 15px;
+    color: #C4E8E7; }
   #header a#logo {
     display: block;
     height: 100px;

@@ -18,6 +18,14 @@ body { background: $mainColor;  background-size: 100%; }
 	top: 0;
 	z-index: 99999;
 	
+	#phone {
+		position: absolute;
+  		right: 6%;
+  		top: 15px;
+  		color: $mainColor;
+	}
+
+
 	a#logo {
 		display: block;
 		height: 100px;
